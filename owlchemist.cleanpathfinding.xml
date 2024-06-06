@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<CleanPathfinding.Settings.Header.Tuning>Réglages</CleanPathfinding.Settings.Header.Tuning>
+<CleanPathfinding.Settings.Header.Doorpathing>Cheminement par portes</CleanPathfinding.Settings.Header.Doorpathing>
+<CleanPathfinding.Settings.Header.Rules>Règles</CleanPathfinding.Settings.Header.Rules>
+<CleanPathfinding.Settings.Header.Misc>Divers</CleanPathfinding.Settings.Header.Misc>
+
+<CleanPathfinding.Settings.Bias>Évitement des terrains sales (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.Bias>
+<CleanPathfinding.Settings.Bias.Desc>Coût de cheminement perçu supplémentaire à appliquer aux cases de terrain générant de la saleté.</CleanPathfinding.Settings.Bias.Desc>
+
+<CleanPathfinding.Settings.NaturalBias>Évitement des terrains en pierre propre (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.NaturalBias>
+<CleanPathfinding.Settings.NaturalBias.Desc>Étant donné que le terrain en pierre ne génère pas de saleté, le réglage ci-dessus peut rendre les pions trop attirés par le fait de marcher dessus, selon la disposition de la carte. Vous pouvez ajuster ce réglage si vous essayez d'éviter ce comportement.</CleanPathfinding.Settings.NaturalBias.Desc>
+
+<CleanPathfinding.Settings.RoadBias>Attraction des routes (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.RoadBias>
+<CleanPathfinding.Settings.RoadBias.Desc>Réduction du coût de cheminement perçu pour toutes les cases avec l'étiquette "Route".</CleanPathfinding.Settings.RoadBias.Desc>
+
+<CleanPathfinding.Settings.EnableRegionPathing>Activer le cheminement régional</CleanPathfinding.Settings.EnableRegionPathing>
+<CleanPathfinding.Settings.EnableRegionPathing.Desc>Lorsqu'il est activé,</CleanPathfinding.Settings.EnableRegionPathing.Desc>
+<CleanPathfinding.Settings.RegionModeThreshold>Seuil du mode de cheminement régional (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.RegionModeThreshold>
+<CleanPathfinding.Settings.RegionModeThreshold.Desc>si le calculateur de chemin d'un pion calcule un nombre de cases au-delà de ce seuil, il passe en "mode de cheminement régional", ce qui fait que ses calculs se fragmentent en blocs de 12x12. Cela est plus coûteux, mais peut élargir leur recherche pour leur permettre de découvrir des éléments tels que des routes afin d'aider à calculer le meilleur chemin. Cette option peut être idéale pour les joueurs qui sont diligents à construire des infrastructures de cheminement.\n\nSi vous réduisez ce seuil, envisagez de réduire le réglage heuristique, ou de le désactiver entièrement.</CleanPathfinding.Settings.RegionModeThreshold.Desc>
+
+<CleanPathfinding.Settings.EnableTuning>Activer le réglage</CleanPathfinding.Settings.EnableTuning>
+<CleanPathfinding.Settings.EnableTuning.Desc>Désactiver cela ramène le cheminement à son comportement normal de base.</CleanPathfinding.Settings.EnableTuning.Desc>
+
+<CleanPathfinding.Settings.DarknessPenalty>Pénalité de l'obscurité (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.DarknessPenalty>
+<CleanPathfinding.Settings.DarknessPenalty.Desc>Définit le coût supplémentaire à ajouter aux cases sombres.</CleanPathfinding.Settings.DarknessPenalty.Desc>
+
+<CleanPathfinding.Settings.FactorLight>Le cheminement doit tenir compte de la lumière</CleanPathfinding.Settings.FactorLight>
+<CleanPathfinding.Settings.FactorLight.Desc>Les pions tiendront compte et privilégieront les chemins éclairés. Ce calcul supplémentaire a un petit impact sur les performances.</CleanPathfinding.Settings.FactorLight.Desc>
+<CleanPathfinding.Settings.HeuristicAdjuster>Réglage heuristique (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): {3}</CleanPathfinding.Settings.HeuristicAdjuster>
+<CleanPathfinding.Settings.HeuristicAdjuster.Desc>Une valeur plus élevée fera que les calculs "s'étendent" comme un cône en fonction de la distance de la destination. Lorsqu'elle est maximisée, un nombre de cases est analysé de manière brute pour une précision maximale au détriment des performances.</CleanPathfinding.Settings.HeuristicAdjuster.Desc>
+
+<CleanPathfinding.Settings.FactorCarryingPawn>Les pions ignorent les règles s'ils transportent un autre pion</CleanPathfinding.Settings.FactorCarryingPawn>
+<CleanPathfinding.Settings.FactorCarryingPawn.Desc>Les pions ignoreront les règles s'ils transportent un autre pion.</CleanPathfinding.Settings.FactorCarryingPawn.Desc>
+
+<CleanPathfinding.Settings.FactorBleeding>Les pions ignorent les règles s'ils saignent</CleanPathfinding.Settings.FactorBleeding>
+<CleanPathfinding.Settings.FactorBleeding.Desc>Les pions ignoreront les règles s'ils saignent à plus de 10%/j.</CleanPathfinding.Settings.FactorBleeding.Desc>
+
+<CleanPathfinding.Settings.EnableExitTuning>Activer le réglage de sortie</CleanPathfinding.Settings.EnableExitTuning>
+<CleanPathfinding.Settings.ExitRange.Warning>N'utilisez le réglage de sortie que si vous jouez sur une carte inhabituelle et que vous remarquez que les pions restent bloqués en essayant de trouver la sortie de la carte. L'activation/désactivation de cette option nécessite un redémarrage.</CleanPathfinding.Settings.ExitRange.Warning>
+<CleanPathfinding.Settings.ExitRange>Portée de sortie (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.ExitRange>
+<CleanPathfinding.Settings.ExitRange.Desc>Les pions cherchent autour d'eux une sortie, à chaque fois en cherchant +4 cases plus loin. Dans le jeu de base, ils abandonnent après 30 itérations. Ce curseur augmente le nombre d'itérations pour rendre leur recherche de sortie plus agressive.</CleanPathfinding.Settings.ExitRange.Desc>
+
+<CleanPathfinding.Settings.EnableWanderTuning>Activer le réglage de déambulation</CleanPathfinding.Settings.EnableWanderTuning>
+<CleanPathfinding.Settings.EnableWanderTuning.Desc>Permet des ajustements pour les pions et les animaux qui déambulent sans but.</CleanPathfinding.Settings.EnableWanderTuning.Desc>
+<CleanPathfinding.Settings.WanderDelay>Délai de déambulation (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}) {3}</CleanPathfinding.Settings.WanderDelay>
+<CleanPathfinding.Settings.WanderDelay.Desc>Ajoute un certain nombre de secondes supplémentaires avant qu'un pion (y compris les animaux en enclos et la faune) ne se déplace vers un nouvel endroit à proximité. Augmentez cela pour un léger gain de performance au détriment d'un monde moins vivant.</CleanPathfinding.Settings.WanderDelay.Desc>
+
+<CleanPathfinding.Settings.DoorPathing>Activer le cheminement par portes</CleanPathfinding.Settings.DoorPathing>
+<CleanPathfinding.Settings.DoorPathing.Desc>Désactiver cela supprimera les gizmos de priorité de cheminement donnés aux portes.</CleanPathfinding.Settings.DoorPathing.Desc>
+<CleanPathfinding.Settings.DoorPathing.Notice>(Le cheminement par portes ne peut pas être désactivé tant qu'une partie est en cours.)</CleanPathfinding.Settings.DoorPathing.Notice>
+
+<CleanPathfinding.Settings.DoorPathingSide>Coût de cheminement des portes latérales (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.DoorPathingSide>
+<CleanPathfinding.Settings.DoorPathingSide.Desc>Les pions tiendront compte de ce coût de cheminement supplémentaire lorsqu'ils passeront par des portes marquées comme portes latérales. Pour information, une porte normale est considérée par défaut avec un coût de +45.</CleanPathfinding.Settings.DoorPathingSide.Desc>
+<CleanPathfinding.Settings.DoorPathingEmergency>Coût de cheminement des portes d'urgence (Valeur par défaut du mod: {0}, Min: {1}, Max: {2}): </CleanPathfinding.Settings.DoorPathingEmergency>
+<CleanPathfinding.Settings.DoorPathingEmergency.Desc>Les pions tiendront compte de ce coût de cheminement supplémentaire lorsqu'ils passeront par des portes marquées comme portes d'urgence. Pour information, une porte normale est considérée par défaut avec un coût de +45.</CleanPathfinding.Settings.DoorPathingEmergency.Desc>
+
+<CleanPathfinding.Settings.OptimizeCollider>Optimiser la vérification du colliseur</CleanPathfinding.Settings.OptimizeCollider>
+<CleanPathfinding.Settings.OptimizeCollider.Desc>Remplace le code qui vérifie si les pions doivent entrer en collision avec d'autres pions par une version optimisée. Aucun changement de logique. Cette optimisation est automatiquement désactivée si elle détecte qu'un autre mod doit modifier ce code et qu'il y aurait un conflit. Changer cela nécessite un redémarrage.</CleanPathfinding.Settings.OptimizeCollider.Desc>
+
+<CleanPathfinding.Icon.DoorType.Desc>Changer le type de porte pour modifier le comportement de routage.\n\nLes pions colons résistent à passer par des portes latérales, et encore plus par des portes d'urgence.\n\nLes portes exclusives sont destinées aux pièces sans autre moyen d'accès, fournissant un indice de routage.</CleanPathfinding.Icon.DoorType.Desc>
+<CleanPathfinding.Icon.Normal>Normal</CleanPathfinding.Icon.Normal>
+<CleanPathfinding.Icon.Side>Latéral</CleanPathfinding.Icon.Side>
+<CleanPathfinding.Icon.Emergency>Urgence</CleanPathfinding.Icon.Emergency>
+<CleanPathfinding.Icon.Exclusive>Exclusif</CleanPathfinding.Icon.Exclusive>
+
+<CleanPathfinding.InvalidDoor>La priorisation des portes ne peut pas être définie lorsqu'une pièce n'a qu'une seule porte.</CleanPathfinding.InvalidDoor>
+
+<CleanPathfinding.ReloadHeader>Redémarrage requis</CleanPathfinding.ReloadHeader>
+<CleanPathfinding.ReloadRequired>Rechargez votre sauvegarde pour activer les fonctionnalités de cheminement par portes. Vous n'avez pas besoin de redémarrer le jeu.</CleanPathfinding.ReloadRequired>
+
+<CleanPathfinding.NewAvoidArea>[Clean Pathfinding] Zone d'évitement enregistrée.</CleanPathfinding.NewAvoidArea>
+<CleanPathfinding.DeletedAvoidArea>[Clean Pathfinding] Zone d'évitement supprimée.</CleanPathfinding.DeletedAvoidArea>
+
+	<Seconds> secondes</Seconds>
+	<Off><![CDATA[<color=green>OFF</color>]]></Off>
+	<Max><![CDATA[<color=red>MAX</color>]]></Max>
+</LanguageData>
